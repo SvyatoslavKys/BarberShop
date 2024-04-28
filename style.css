@@ -160,7 +160,7 @@ body{
 
 .hero-right{
     background:rgba(32, 32, 32, 0.2);
-    background-image: url(../img/Slider-img-3.jpg);
+    background-image: url('./img/slider-img-3.jpg');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -322,7 +322,7 @@ body{
 
 .prices-box{
     border: 1px solid var(--accent-color);
-    background-image: url('/img/Slider\ img\ 2.png');
+    background-image: url('./img/slider-img-2.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 130px;
@@ -616,7 +616,7 @@ display: flex;
     left: 656px;
     gap: 0px;
     opacity: 0px;
-    background-image: url('/img/BBS-contact-box.png');
+    background-image: url('./img/bbs-contact-box.png');
     background-repeat: no-repeat;
     background-size: cover;
   
