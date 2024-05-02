@@ -661,13 +661,13 @@ display: flex;
     background-image: url('./img/bbs-contact-box.png');
     background-repeat: no-repeat;
     background-size: cover;
-   
+
 }
 .box-shadow{
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-  
+    padding-left: 99px;
 
 }
 
@@ -690,6 +690,8 @@ display: flex;
 
 .footer-copy{
     margin: 0;
+    color: #9DA4BD;
+    
    
 
 }
@@ -697,17 +699,33 @@ display: flex;
 .footer-list{
     display: flex;
     gap: 40px;
+    height: 20px;
+    width: 100px;
     
 }
+.footre-item{
+   color:  #303030;
+   font-family: "Open Sans" sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 14.98px;
+    letter-spacing: 0.2em;
 
-
-.online{
-   
+}
+.footre-item::before{
+    width: 60px;
+    height: 1px;
+    content: "";
+    background-color: #303030;
+    margin-right: 40px;
+   margin-top: 10px;
 }
 
-.contact{
+
+
+
     
-}
+
 /* --------------------modal-------------------- */
 
 .beckdrop{
@@ -777,4 +795,3 @@ display: flex;
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
