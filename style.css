@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --header-color:  #FFFFFF;
     --btn-color-wite: #FFFFFF;
@@ -792,7 +795,7 @@ body{
     height: 644px;
     top: 4254px;
     left: 656px;
-    background-image: url('../img/bbs-contact-box.png');
+    background-image: url('./img/bbs-contact-box.png');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 90%;
