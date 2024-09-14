@@ -61,10 +61,7 @@ body{
     margin-right: 70px;
 }
 
-.current {
-    /* color: var(--accent-color); */
 
-}
 .current::after {
     content: " ";
     width: 100%;
@@ -130,10 +127,7 @@ body{
 }
 
 /* ------------Hero----------- */
-.hero{
-    /* padding-top: 120px; */
 
-}
 
 .hero-list{
     display: flex;
@@ -261,6 +255,7 @@ body{
 
 .about-container{
     display: flex;
+    height: 430px;
 }
 
 .about-list{
@@ -275,7 +270,7 @@ body{
 
 .about-right{
     flex-grow: 1;
-    padding: 272px 0 255px 96px
+    padding: 0 47px 0  64px
 
 }
 
@@ -445,7 +440,7 @@ body{
 .reasons{
     padding-top: 130px;
     padding-bottom: 103px;
-    background: #F7F7F7;
+    /* background: #F7F7F7; */
 
 }
 .reasons-container{
@@ -638,7 +633,7 @@ body{
 
 
 .masters-pre-title{
-    font-family: "Open Sans" sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     font-weight: 600;
     line-height: 1.36;
@@ -671,7 +666,7 @@ body{
 
 .master-item-title{
     margin-top: 30px;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: calc(25 / 18);
@@ -705,7 +700,7 @@ body{
 }
 
 .gallary-pre-title{
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     font-weight: 600;
     line-height: calc(15 / 11);
@@ -740,99 +735,53 @@ body{
     position: relative;
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     
 }
 .heder-contact{
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 42px;
     font-weight: 700;
     line-height: 49.31px;
     color: #FFFFFF;
-    
-   
-   
+    margin-bottom: 44px;
 }
-.form-submit{
+.input-wrap{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+}
+.input-stile{
+    border: none;
+    border-bottom: 1px solid white;
 
-}
-.input-name{
-    width: 270px;
-    height: 24px;
-    border: 1px solid tomato;
     background: transparent;
-    margin-top: 44px;
-    margin-right: 15px;
-    font-family: "Open Sans" sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 14.98px;
-    letter-spacing: 0.1em;
-    color: #9DA4BD66;
-    transition: 0.5s;
-
-    
-
-
-
-}
-.input-phone{
     width: 270px;
-    height: 24px;
-    border: 1px solid tomato;
-    background: transparent;
-    margin-top: 44px;
-    font-family: "Open Sans" sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 14.98px;
-    letter-spacing: 0.1em;
-    color: #9DA4BD66;
-    transition: 0.5s;
-
-
+    color: white;
 }
 .input-mesage{
+    border: none;
     width: 560px;
     height: 76px;
-    border: 1px solid tomato;
+    resize: none;
     background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.form-online>button{
     margin-top: 44px;
-    font-family: "Open Sans" sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 14.98px;
-    letter-spacing: 0.1em;
-    color: #9DA4BD66;
-    transition: 0.5s;
-
-
-
+    margin-left: 0;
 }
 
-.input-mesage, .input-phone, .input-name:focus{
-    color: #FFFFFF;
-    background: transparent;
-    border: none;
 
-}
-
-.contact-btn{
-    margin-top: 44px;
-}
 
 
 .left-box{
-    width: 625px;
+    width: 655px;
     height: 644px;
-    top: 4254px;
-    left: 656px;
-    gap: 44px;
-    opacity: 0px;
     background: #191C26;
-    padding-left: 56px;
-    padding-top: 130px;
+    padding: 136px 40px 200px 55px;
    
 
 
@@ -862,17 +811,28 @@ body{
     margin-top: 40px;
 }
 .time-work{
+    display: flex;
+    align-items: center;
+
     margin-top: 70px;
-    font-family: "Open Sans" sans-serif;
-    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     line-height: 14.98px;
     color: #F7F7F7;
 
 }
+.time-work::before{
+    width: 60px;
+    height: 1px;
+    content: "";
+    background: #9DA4BD66;
+    margin-right: 20px;
+
+
+}
 .time-day{
     margin-top: 20px;
-    font-family: "Open Sans" sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -882,12 +842,14 @@ body{
 
 }
 .stile-link-footer{
-    font-family: "Open Sans" sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     color: #9DA4BD;
-
+}
+.stile-link-footer:hover{
+    color: white;
 }
 
 
@@ -898,15 +860,17 @@ body{
 .footer{
     width: 100%;
     height: 127px;
-    display: flex;
-    justify-content: center;
     padding-top: 55px;
-    gap: 800px;
-
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 55px;
 }
 
 .footer-copy{
-    margin: 0;
+    margin-left: 40px;
     color: #9DA4BD;
     
    
@@ -917,14 +881,19 @@ body{
     display: flex;
     gap: 40px;
     height: 20px;  
-    width: 100px;
-   
-    
+    align-items: center;
+}
+.footer-list::before{
+    width: 60px;
+    height: 1px;
+    content: "";
+    background: #9DA4BD66;
+    margin-right: 20px;
 }
 
 .footer-item{
    color:  #303030;
-   font-family: "Open Sans" sans-serif;
+   font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     font-weight: 600;
     line-height: 14.98px;
@@ -961,7 +930,7 @@ body{
     position: absolute;
     width: 700px;
     height: 500px;
-    background-color: #9DA4BD;
+    background-color: white;
     top: 50%;
     left: 50%;
     transform: translate( -50% , -50% );

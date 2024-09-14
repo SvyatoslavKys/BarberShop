@@ -65,12 +65,12 @@
              <li  class="about-item"><img class="hero-img" src="./img/about1.jpg" 
                 alt="барбер пенит шею" 
                 width="270" 
-                height="445">
+                height="430">
             </li>
             <li class="about-item" ><img class="hero-img" src="./img/about2.jpg" 
                 alt="барбер бреет шею" 
                 width="270" 
-                height="445">
+                height="430">
             </li>
         </ul>
         <div class="about-right">
@@ -385,10 +385,28 @@
     <section class="online-contact" id="contact">
         <div class="left-box">
         <h2 class="heder-contact">Онлайн-запись</h2>
-        <form action="">
-            <input type="text" class="input-name">
-            <input type="text" class="input-phone">
-            <input type="text" class="input-mesage">
+        <form action="" class="form-online" >
+            <div class="input-wrap">
+            <input 
+            type="text" 
+            class="input-stile input-name" 
+            placeholder="Имя*"
+            minlength="2"
+            required
+            >
+            <input 
+            type="tel" 
+            class="input-stile input-phone" 
+            placeholder="Номер*"
+            required
+            >
+            </div>
+            <textarea
+            type="text" 
+            class=" input-mesage" 
+            placeholder="Сообщение"
+            required
+            ></textarea>
         <button type="submit" class="header-btn contact-btn">отправить</button>
         </form>
         </div>
@@ -414,11 +432,13 @@
     </section>
     </main>
      <footer class="footer">
-        <p class="footer-copy">&copy; Copyright 2020</p>
+        <div class="container footer-container">
+        <p class="footer-copy">&copy; Copyright 2024</p>
         <ul class="footer-list">
             <li class="footre-item "><a class="hero-link" href="" target="_blank">Instagram</a></li>
             <li class="footre-item "><a class="hero-link" href="" target="_blank">Youtube</a></li>
         </ul>
+    </div>
     </footer>
    <div class="beckdrop is-hidden" data-modal>
      <div class="modal">
@@ -428,7 +448,7 @@
             <input type="text" class="form-input">
             <input type="text" class="form-input">
             <input type="text" class="form-input">
-            <button type="submit" class="header-btn" >button</button>
+            <button type="submit" class="about-btn" >button</button>
         </form>
      </div>
    </div>
