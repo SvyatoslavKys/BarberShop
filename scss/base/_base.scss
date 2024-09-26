@@ -1,0 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --header-color:  #FFFFFF;
+    --btn-color-wite: #FFFFFF;
+    --btn-color-black: #303030;
+    --accent-color: #FF6C00;
+    --title-color-white:  #FFFFFF;
+    --title-color-black: #303030;
+} 
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+ 
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    
+    /* background:  #555555; */
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
