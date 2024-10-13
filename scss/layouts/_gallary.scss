@@ -1,7 +1,10 @@
 .gallary{
-    padding-top: 130px;
-    padding-bottom: 130px;
-    /* background: #6f4949; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media screen and (min-width: 1200px){
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 
 .gallary-pre-title{
@@ -14,6 +17,11 @@
     margin-bottom: 44px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    
+    @media screen and (min-width: 1200px){
+        justify-content: start;
+    }
 }
 .gallary-pre-title::before{
     display: block;
@@ -22,15 +30,26 @@
     content: "";
     background-color: #303030;
     margin-right: 20px;
- 
-
 }
 .gallary-list{
+    @media screen and (min-width: 768px){
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gallary-item{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
 }
-/* .gallary-item{
-    margin: 10px;
-} */

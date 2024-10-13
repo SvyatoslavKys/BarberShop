@@ -1,9 +1,34 @@
 .header{
     position: absolute;
-    width: 100%;
-    left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
+    z-index: 4;
+   
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        z-index: 4;
+    }
+    
+
+    // @media screen and (min-width: 1200px)
+    // {
+    //     width: 1200px;
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+    //     margin: 0 auto;
+    // }
+   
+}
+.head-nav{
+    display: none;
+    @media screen and (min-width: 768px){
+        display: block;
+        z-index: 4;
+    }
 }
 
 .header-link,
@@ -16,9 +41,28 @@
     text-align: left;
     color: var(--header-color);
     transition: color 300ms linear;
+   
+    
 }
-.header-logo{
-    margin-right: 70px;
+
+.heder-logo{
+    
+    width: 65px;
+    height: 55px;
+    display: inline-block;
+    @media screen and ( min-width: 768px){
+        top: 35px;
+        left: 15px;
+        position: absolute;
+        z-index: 4;
+    }
+    @media screen and ( min-width: 1200px){
+        margin-right: 70px;
+        position: relative;
+        top: 0;
+   
+    }
+
 }
 
 
@@ -43,8 +87,17 @@
 {
     color: var(--accent-color);
 }
-
-
+.icon-svg{
+    width: 65px;
+    height: 55px;
+    fill: red;
+}
+.icon{  
+    fill: black;
+    @media screen and (max-width: 768px) {
+    fill: white;
+    }    
+}
 
 /* .header-tel:hover{
     color: var(--accent-color);
@@ -62,9 +115,15 @@
     background-color: transparent;
     min-height: 40px;
     min-width: 160px;
-    margin-left: 40px;
+    max-width: 194px;
     transition: background-color 300ms linear, color 300ms linear;
     cursor: pointer;
+    @media screen and (min-width: 768px){
+        margin-left: 0;
+    }
+    @media screen and (min-width: 1200px){
+        margin-left: 40px;
+    }
 }
 .header-btn:hover,
 .header-btn:focus {
@@ -75,6 +134,18 @@
 .heder-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    @media screen and (min-width: 768px){
+        align-items:flex-start;
+        padding-left: 80px;
+    }
+    @media screen and ( min-width: 1200px){
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
 }
 
 .header-list{
@@ -84,4 +155,23 @@
 }
 .header-connect{
     margin-left: auto;
+    display: none;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    @media screen and (min-width: 1200px){
+        display: block;
+    }
+}
+.header-mob-link, .link-mob{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: black;
+    transition: color 300ms linear;
 }

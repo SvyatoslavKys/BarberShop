@@ -1,11 +1,24 @@
 .reasons{
-    padding-top: 130px;
-    padding-bottom: 103px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     /* background: #F7F7F7; */
+    @media screen and ( min-width: 1200px){
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        padding-top: 130px;
+        padding-bottom: 103px;
+    }
 
 }
 .reasons-container{
     display: flex;
+    flex-direction: column-reverse;
+    @media screen and ( min-width: 1200px){
+    display: flex;
+    flex-direction: row;
+}
 
 }
 .reasons-title-box{
@@ -14,7 +27,10 @@
     gap: 10px;
     /* align-items: center;
     justify-content: center; */
-    width: 580px;
+    width: 100%;
+    @media screen and ( min-width: 1200px){
+        width: 580px;
+    }
 }
 
 
@@ -71,26 +87,35 @@
     display: block;
 }
 .reasons-list{
-    width: 580px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 20px;
+    padding: 40px 20px;
     flex-wrap: wrap;
+    @media screen and ( min-width: 1200px){
+        width: 580px;
+    }
 }
 .reasons-iten{
-    width: 170px;
+    width: 160px;
     height: 133px;
     background: #e6e4e4;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media screen and ( min-width: 768px){
+        width: 200px;
+    }
+    @media screen and ( min-width: 1200px){
+        width: 170px;
+    }
 }
 .reasons-item-text{
     display: block;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 11px;
     font-weight: 600;
     text-align: center;

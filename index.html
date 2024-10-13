@@ -12,8 +12,12 @@
 </head>
 <body> 
     <header class="header">
-     <div class="container heder-container">  
-        <a class="heder-logo" href=""><img src="./img/logo.svg" alt="Лого"></a>
+     <div class=" heder-container">  
+        <a class="heder-logo" href="./index.html">
+            <svg class="icon-svg">
+            <use class="icon" href="/img/sprite-logo.svg#Logo-2">
+            </use>
+          </svg></a>
      <nav class="head-nav">
          <Ul class="header-list">
           <li class="header-item">
@@ -50,6 +54,38 @@
              </ul> 
               </div>
                 <div class="hero-right">
+                    <button class="hero-menu-btn" data-menu-button>
+                        <img class="cross" src="./img/close_24px.svg" alt="">
+                        <img class="menu" src="./img/menu_24px.svg" alt="">
+                    </button>
+                    <div class="hero-mob-menu" data-menu>
+                        <Ul class="header-mob-list">
+                            <li class="header-mob-item">
+                              <a class="header-mob-link" href="#about">О нас</a>
+                              </li>
+                              <li class="header-mob-item">
+                              <a class="header-mob-link" href="#prices">Услуги и цены</a>
+                              </li>
+                              <li class="header-mob-item">
+                              <a class="header-mob-link" href="#master">Мастера </a>
+                              </li>
+                              <li class="header-mob-item">
+                              <a class="header-mob-link" href="#contact">Конткты</a>
+                              </li>
+                           </Ul> 
+                           <div class="hero-mob-btn">
+                                <a class="link-mob " href="tel:+380441111111">+38 044 111 11 11</a>
+                                <button class="hero-btn header-btn" type="button" data-modal-open >онлайн-запись</button>
+                            </div>
+                            <ul class="header-mob-list"> 
+                                <li class="header-mob-item">
+                                    <a class="header-mob-link" href="" target="_blank">Instagram</a>
+                                </li>
+                                <li class="header-mob-item">
+                                    <a class="header-mob-link" href="" target="_blank">Youtube</a>
+                                </li>
+                             </ul> 
+                    </div>
                      <p lang="en" class="hero-pre-title">A hair salon for men in Kyiv</p>
                      <h1 lang="en" class="hero-title">BarberShop</h1>
                      <p class="hero-after-title">
@@ -62,15 +98,15 @@
     <section class="about" id="about" >
         <div class="container about-container">
         <ul class="about-list">
-             <li  class="about-item"><img class="hero-img" src="./img/about1.jpg" 
+             <li  class="about-item"><img class="about-img" src="./img/about1.jpg" 
                 alt="барбер пенит шею" 
-                width="270" 
-                height="430">
+                 
+                > 
             </li>
-            <li class="about-item" ><img class="hero-img" src="./img/about2.jpg" 
+            <li class="about-item" ><img class="about-img" src="./img/about2.jpg" 
                 alt="барбер бреет шею" 
-                width="270" 
-                height="430">
+                
+                >
             </li>
         </ul>
         <div class="about-right">
@@ -168,19 +204,17 @@
         <h2 class="masters-title" id="master">Наши мастера</h2>
         <ul class="masters-list">
             <li class="master-item">   
-                <div class="master-item-wrap">
+                
                  <img 
                  class="masters-img" 
                     
                      src="./img/John Smith.jpg" 
                      alt="John Smith" 
-                     width="346" 
+                     width="320" 
                      height="370"
                  />
-                 <!-- <p class="masters-img-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam architecto facere tenetur et nemo, officiis hic quas commodi nostrum! Velit non ratione cumque. Laborum quibusdam explicabo eligendi exercitationem debitis. Magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis totam vero perspiciatis modi sapiente est ab minus laudantium dolorum fuga, nihil, quod voluptatem blanditiis, tempora veritatis hic quaerat doloribus placeat.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias nihil reprehenderit ipsa quas voluptate fugiat sed esse consequuntur autem? Itaque maiores voluptas expedita consectetur voluptatum. Pariatur facilis facere voluptatibus eos.
-                 </p> -->
-                 </div>
+             
+                 
                 <h3 class="master-item-title" lang="en">John Smith</h3> 
                 <p class="master-item-text" lang="en">Extreme Barber</p>
                 <ul class="masters-social-list">
@@ -241,7 +275,7 @@
                 </ul>
             </li>
             <li class="master-item">
-                <img class="masters-img" src="./img/Michele Doe.jpg" alt="Michele Doe" width="346" 
+                <img class="masters-img" src="./img/Michele Doe.jpg" alt="Michele Doe" width="320" 
                 height="370">
                 <h3 class="master-item-title" lang="en">Michele Doe</h3>
                 <p class="master-item-text" lang="en">Extreme Barber</p>
@@ -303,7 +337,7 @@
                 </ul>
             </li>
             <li class="master-item">
-                <img class="masters-img" src="./img/Alan Black.jpg" alt="Alan Black" width="346" 
+                <img class="masters-img" src="./img/Alan Black.jpg" alt="Alan Black" width="320" 
                 height="370">
                 <h3 class="master-item-title" lang="en">Alan Black</h3>
                 <p class="master-item-text" lang="en">Extreme Barber</p>
@@ -455,5 +489,6 @@
    </div>
    <script src="./modalSkrypt-1.js">
    </script>
+   <script src="./open-menu.js"></script>
 </body>
 </html>
