@@ -56,6 +56,7 @@
     background: transparent;
     border: none;
     z-index: 3;
+    display: block;
     @media screen and (min-width: 768px){
        display: none;
     }
@@ -69,6 +70,12 @@
 .hero-menu-btn .cross{
     display: none;
 }
+// .hero-menu-btn.is-open.is-scroll .menu{
+//     display: block;
+// }
+// .hero-menu-btn.is-open.is-scroll .cross{
+//     display: none;
+// }
 .body.is-scroll {
     overflow: hidden;
 }

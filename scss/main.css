@@ -482,6 +482,7 @@ body {
   background: transparent;
   border: none;
   z-index: 3;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .hero-menu-btn {

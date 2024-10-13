@@ -5,25 +5,25 @@
 
   menuBtnRef.addEventListener("click", () => {
     const expanded = menuBtnRef.getAttribute("aria-expanded") === "true";
-
+    
+    // Переключаем классы
     menuBtnRef.classList.toggle("is-scroll");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
-    mobileMenuscroll.classList.toggle("is-scroll");
-  });
-
-  menuBtnRef.addEventListener("click", () => {
-    const expanded = menuBtnRef.getAttribute("aria-expanded") === "true";
-
     menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
-
+    mobileMenuscroll.classList.toggle("is-scroll");
     mobileMenuRef.classList.toggle("is-open");
+    
+    // Обновляем aria-attribute
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
   });
 
-  // Исправленный селектор для ссылок с классом header-mob-link
+  // Снятие классов у menuBtnRef при нажатии на ссылки с классом .header-mob-link
   document.querySelectorAll('.header-mob-link').forEach(link => {
-    link.addEventListener('click', (event) => {
-      // Снимаем классы при клике на ссылку
+    link.addEventListener('click', () => {
+      // Снимаем классы с menuBtnRef
+      menuBtnRef.classList.remove("is-scroll");
+      menuBtnRef.classList.remove("is-open");
+
+      // Снимаем классы с мобильного меню
       mobileMenuscroll.classList.remove("is-scroll");
       mobileMenuRef.classList.remove("is-open");
     });
