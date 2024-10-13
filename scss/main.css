@@ -501,6 +501,14 @@ body {
   display: none;
 }
 
+.hero-menu-btn.is-open .body {
+  overflow: hidden;
+}
+
+.body {
+  overflow: scroll;
+}
+
 .hero-container {
   display: flex;
   padding: 0;
@@ -527,6 +535,7 @@ body {
   transition: 250ms ease-in-out;
   color: #303030;
   z-index: 2;
+  overflow: scroll;
 }
 .hero-mob-menu.is-open {
   transform: translateX(0);
@@ -1396,7 +1405,6 @@ body {
 .right-box {
   width: 100%;
   height: 644px;
-  background-image: url("../img/Bg.png");
   background: #191C26;
   padding: 80px 30px;
 }

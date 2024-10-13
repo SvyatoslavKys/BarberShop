@@ -69,7 +69,13 @@
 .hero-menu-btn .cross{
     display: none;
 }
-
+.hero-menu-btn.is-open .body{
+    overflow: hidden;
+}
+.body{
+    overflow: scroll;
+}
+  
 .hero-container{
     display: flex;
     padding: 0 ;
@@ -93,6 +99,7 @@
     transition: 250ms ease-in-out;
     color: #303030;
     z-index: 2;
+    overflow: scroll;
         &.is-open{
             transform: translateX(0);
         }
