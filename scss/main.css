@@ -1307,7 +1307,7 @@ body {
 .online-contact {
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .online-contact {
     position: relative;
     width: 1200px;
@@ -1325,7 +1325,7 @@ body {
   margin-bottom: 44px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .heder-contact {
     text-align: left;
   }
@@ -1337,7 +1337,7 @@ body {
   gap: 30px;
   margin-bottom: 44px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .input-wrap {
     display: flex;
     gap: 30px;
@@ -1362,7 +1362,7 @@ body {
   border-bottom: 1px solid white;
   color: white;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .input-mesage {
     width: 560px;
   }
@@ -1384,7 +1384,7 @@ body {
   background: #191C26;
   padding: 80px 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .left-box {
     width: 655px;
     height: 644px;
@@ -1400,7 +1400,7 @@ body {
   background: #191C26;
   padding: 80px 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .right-box {
     width: 625px;
     height: 644px;

@@ -1,6 +1,6 @@
 .online-contact{
     display: block;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1200px){
         position: relative;
         width: 1200px;
         margin: 0 auto;
@@ -15,7 +15,7 @@
     color: #FFFFFF;
     margin-bottom: 44px;
     text-align: center;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1200px){
         text-align: left;
     }
 }
@@ -24,7 +24,7 @@
     flex-direction: column;
     gap: 30px;
     margin-bottom: 44px;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1200px){
         display: flex;
         gap: 30px;
         margin-bottom: 44px;
@@ -46,7 +46,7 @@
     background: transparent;
     border-bottom: 1px solid white;
     color: white;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1200px){
         width: 560px;
     }
     
@@ -64,7 +64,7 @@
         height: 644px;
         background: #191C26;
         padding: 80px 30px;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1200px){
         width: 655px;
         height: 644px;
         background: #191C26;
@@ -79,7 +79,7 @@
     background-image: url('../img/Bg.png');
     background: #191C26;
     padding: 80px 30px;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1200px){
         width: 625px;
         height: 644px;
         
